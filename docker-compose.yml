@@ -4,7 +4,6 @@ version: '3.8'
 x-base-config: &base-config
   ports:
     - "11235:11235"  # Gunicorn port
-    - "81:80"
   env_file:
     - .llm.env       # API keys (create from .llm.env.example)
   environment:
